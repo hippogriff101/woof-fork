@@ -23,6 +23,11 @@
     margin: 0;
 }
 
+.woof-logo {
+    height: 150px;
+    width: auto;
+}
+
 .chewy-regular {
   font-family: "Chewy", system-ui;
   font-weight: 400;
