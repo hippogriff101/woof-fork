@@ -102,6 +102,19 @@
              const distance = Math.sqrt(Math.pow(clickX - startX, 2) + Math.pow(clickY - startY, 2));
              const pawHeight = distance + 150;
 
+             // Calculate end position so the paw tip overlaps the click point
+             let endX = clickX, endY = clickY;
+             const offset = (pawHeight / 2) - 50;
+             if (minDist === distTop) {
+                 endY = clickY - offset;
+             } else if (minDist === distBottom) {
+                 endY = clickY + offset;
+             } else if (minDist === distLeft) {
+                 endX = clickX - offset;
+             } else {
+                 endX = clickX + offset;
+             }
+
              // Create paw element
              const paw = document.createElement('img');
              paw.src = pawImages[Math.floor(Math.random() * pawImages.length)];
@@ -116,8 +129,8 @@
 
              // Animate paw to click position
              setTimeout(() => {
-                 paw.style.left = clickX + 'px';
-                 paw.style.top = clickY + 'px';
+                 paw.style.left = endX + 'px';
+                 paw.style.top = endY + 'px';
              }, 10);
 
              // After reaching destination, leave paw print and retract
