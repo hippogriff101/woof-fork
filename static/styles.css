@@ -23,6 +23,20 @@
     margin: 0;
 }
 
+.woof-chan {
+  font-size: 30px;
+  text-decoration: bold, italic;
+  color: #2f1313;
+  margin: 0;
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+}
+
+.woof-chan:hover {
+  cursor: pointer;
+  color: #87803b;
+}
+
 .woof-logo {
     height: 150px;
     width: auto;
@@ -38,6 +52,27 @@
 
 body {
     background-color : #e5cd6c;
+}
+
+
+button {
+  background-color: #2f1313;
+  color: #e5cd6c;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.contact-section {
+  margin-top: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
 
 .faq-section {
