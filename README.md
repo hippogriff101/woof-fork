@@ -1,8 +1,9 @@
 # Woof YSWS
 Woof YSWS is a YSWS where you code a dog themed website for 5 hours and get a dog plushie!
 
-Still WIP
+[![Status: Work in Progress](https://img.shields.io/badge/status-work%20in%20progress-yellow)](#)
 
+> **Note:** This project is currently a work in progress. Features and documentation may change.
 woof-mu.vercel.app
 
 ## Installation
