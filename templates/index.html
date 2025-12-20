@@ -95,6 +95,22 @@
              "{{ url_for('static', filename='images/paw_8.png') }}"
          ];
          const pawPrintImage = "{{ url_for('static', filename='images/paw_print_1.png') }}";
+         const barkSounds = [
+             "{{ url_for('static', filename='sounds/bark_01.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_02.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_03.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_04.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_05.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_06.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_07.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_08.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_09.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_10.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_11.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_12.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_13.mp3') }}",
+             "{{ url_for('static', filename='sounds/bark_14.mp3') }}"
+         ];
 
          pawModeBtn.addEventListener('click', (e) => {
              e.stopPropagation();
@@ -108,6 +124,10 @@
 
              const clickX = e.clientX;
              const clickY = e.clientY;
+
+             // Play random bark sound
+             const bark = new Audio(barkSounds[Math.floor(Math.random() * barkSounds.length)]);
+             bark.play();
 
              // Determine which edge to come from (closest edge)
              const distTop = clickY;
