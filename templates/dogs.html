@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
-    <title>Woof YSWS</title>
+    <title>Dogs - Woof YSWS</title>
 
      <button class="hclink-btn" onclick="window.location.href='https://hackclub.com'">
         <img class="hc-image" style="position: absolute; top: 0; left: 10px; border: 0; width: 128px; z-index: 1000;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club">
@@ -25,48 +25,33 @@
          <p class="chewy-regular">Spend 5 or more hours making a dog themed project and get a dog plushie! <b>Ends January 14th!</b></p>
          <p class="chewy-regular">Click the paw in the bottom right to get a cool dog animation!</p>
         <br>
-         <a href="https://submit.hackclub.com/woof" class="rsvp-link">
-             <img src="{{ url_for('static', filename='images/submit_image.png') }}" alt="Pet me to Submit!!" class="rsvp-image">
-         </a>
-     </div>
-     <div class="faq-section">
-        <h2 class="chewy-regular" style="font-size: 40px;">Do you want to meet our dogs?</h2>
+        <button onclick="window.location.href='/'">Click to go back home</button>
         <br>
-        <button onclick="window.location.href='/dogs'">Click to go to the Dogs Page</button>
+     <div class="dogs-section">
+        <h2 class="chewy-regular" style="font-size: 50px">Our Dogs</h2>
+        <br>
+        <div class="dog">
+            <div class="dogs-card">
+                <img src="{{ url_for('static', filename='images/dogs/cooper.jpg') }}" alt="Cooper, Freddie's dog">
+                <p class="chewy-regular">This is Freddie's dog, Cooper!</p>
+            </div>
+            <br>
+            <div class="dogs-card">
+                <img src="{{ url_for('static', filename='images/dogs/monzi.jpg') }}" alt="Alex's dog">
+                <p class="chewy-regular">This is Alex's dog, Monzi!</p>
+            </div>
+            <br>
+            <div class="dogs-card">
+                <img src="{{ url_for('static', filename='images/dogs/pebble.jpg') }}" alt="Will's dog">
+                <p class="chewy-regular">This is Will's dog, Pebble!</p>
+            </div>
+            <br>
+            <div class="dogs-card">
+                <img src="{{ url_for('static', filename='images/dogs/snoopy.jpg') }}" alt="Dwait's dog">
+                <p class="chewy-regular">This is Dwait's dog, Snoopy!</p>
+            </div>
+        </div>
     </div>
-     <div class="faq-section">
-         <h2 class="chewy-regular" style="font-size: 50px">FAQ</h2>
-         <details class="faq-item">
-             <summary class="chewy-regular">What is Woof?</summary>
-             <p class="chewy-regular">Woof is a Hack Club YSWS where we'll send you a dog plushie or other cool prizes if you ship a project to do with dogs!</p>
-         </details>
-         <details class="faq-item">
-             <summary class="chewy-regular">What is Hackatime?</summary>
-             <p class="chewy-regular">We use Hackatime to verify time coded! It is an editor extension that tracks the time you spend coding. You can install it <a href="https://hackatime.hackclub.com/">here</a>.</p>
-         </details>
-         <details class="faq-item">
-             <summary class="chewy-regular">How do I participate?</summary>
-             <p class="chewy-regular">You need to be 13 to 18 years old to participate! Your identity does need to be verified using Hack Clubs secure accounts portal. A Slack and Github account is also required as well as a demo link (or video for hardware), repo link, screenshot and hackatime project!</p>
-         </details>
-         <details class="faq-item">
-             <summary class="chewy-regular">What can I build?</summary>
-             <p class="chewy-regular">Anything to do with dogs! It could be a website, an app, or even a hardware project. Some examples will come out soon™️...</p>
-         </details>
-     </div>
-   
-     <div class="contact-section">
-        <h2 class="chewy-regular" style="font-size: 50px">Contact</h2>
-        <details class="faq-item chewy-regular">
-             <summary>Slack</summary>
-             <p>Hack Club Slack is used to connect hackers from around the globe! You can sign up now <a href="https://hackclub.com/slack">here</a>!</p>
-            <p>Head over to <a class="woof-chan" href="https://hackclub.enterprise.slack.com/archives/C08LCGSECQP">#woof</a> on Slack when your set up!</p>
-         </details>
-        <details class="faq-item chewy-regular">
-             <summary>Email and DM</summary>
-             <p>Feel free to drop me a DM to <a href="https://hackclub.enterprise.slack.com/team/U078VN0UU2K">@Freddie</a>.</p>
-             <p>Unfortunately we do not have a official email at the moment but feel free to use <a href="mailto:hello@freddieyershon.co.uk">hello@freddieyershon.co.uk</a> if you want to.</p>
-         </details>
-     </div>
      <footer class="credits">
          Made with ❤️ by Hack Clubbers @Aditya and @Freddie! Dog Artwork by @safia!
          <br>
