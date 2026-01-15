@@ -143,24 +143,43 @@ a:hover {
     font-family: sans-serif;
 }
 
-.credits button:hover {
+button:hover {
     background-color: #cfcba9;
     color: #2f1313;
 }
 
+.dog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .dog img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .dogs-section {
-  margin-top: 40px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 20px;
-  display: block;
+  text-align: center;
+  transition: transform 0.2s ease;
+
 }
+
+.dogs-card {
+  padding: 20px;
+  text-align: center;
+}
+
+.dogs-card:hover {
+  transform: scale(1.1);
+
+}
+
 .hclink-btn {
     border: none;
     cursor: pointer;
